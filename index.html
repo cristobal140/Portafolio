@@ -1,0 +1,380 @@
+<!--Links -->
+<!--video: https://www.youtube.com/watch?v=2s19KJq49rQ-->
+<!--link1: https://cdnjs.com/libraries/font-awesome -->
+<!--link2: https://fontawesome.com/ -->
+
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--link1-->
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="miestilo.css"> <!--crear hoja de estilos -->
+
+</head>
+<body>
+    <!--- MENU DE ENCABEZADO --->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Cristóbal</a>
+                </div>
+                <nav id="nav">                  <!-- esto se creo con nav#nav-->
+                    <ul>                        <!--con esto se crean los menus del sitio-->
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+
+                </nav> 
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-sharp fa-solid fa-bars"></i> <!-- barra de link2-->
+                </div>
+
+            </header>
+        </div> 
+
+    <!-- SECCION DE INICIO -->
+    <section id="inicio" class="inicio"> <!--section#inicio.inicio-->
+        <div class="contenido-banner"> <!--div.contenido-banner-->
+            <div class="contenedor-img"> <!--div.contenedor-img-->
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Cristóbal Cortés</h1>
+            <h2>Ingeniero Civil en Informática</h2>
+            <div class="redes"><!--div.redes   se oucpa lin2 para poner las redes que compartir-->
+                <a href="https://web.facebook.com/cristo.cortescofre/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/crist%C3%B3bal-andr%C3%A9s-c-287461131/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/cristoacc/"><i class="fa-brands fa-instagram"></i></a>
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola!, mi nombre es Cristóbal Cortés</span> y soy estudiante de Ingeniería Civil en Informática en la Universidad Católica del Maule. Soy una persona apasionada por la tecnología, la computación y la música. Me considero una persona responsable, proactiva y comprometida con mi trabajo, siempre dispuesto a aprender y enfrentar nuevos desafíos. A través de mi formación académica y experiencia laboral en el área de la informática, he desarrollado habilidades en programación, trabajo en equipo y resolución de problemas. En mi tiempo libre, me gusta estar al día en las últimas tendencias tecnológicas y pasar tiempo con mi familia y amigos.</p>
+        
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            12-05-1999
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 62445426
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cristobal.cortes@alu.ucm.cl
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-flask"></i>
+                            <span>Ciencia</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Deportes</span>
+                        </div>
+                       <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-rocket"></i>
+                            <span>Espacio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/drive/folders/1Zyl-U7AFKb4DIINgGlw1KqP5Rd1b1P-R?usp=sharing">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <div class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technica skills-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso sql">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills-->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo_en_equipo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Directo</span>
+                        <div class="barra-skill">
+                            <div class="progreso directo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Estructurado</span>
+                        <div class="barra-skill">
+                            <div class="progreso estructurado">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Estudios</h4>
+                        <span class="casa">"Universidad Católica del Maule"</span>
+                        <span class="fecha">2018 - actualidad</span>
+                        <p>La Universidad Católica del Maule ha sido mi hogar académico desde el año 2018, donde actualmente curso la carrera de Ingeniería Civil en Informática. Durante este tiempo, he tenido la oportunidad de recibir una educación de calidad y enriquecedora, gracias a la excelencia académica de sus profesores y a un ambiente de aprendizaje colaborativo y participativo. Esta experiencia ha permitido que desarrolle habilidades técnicas y personales que me han preparado para enfrentar los desafíos de mi futuro profesional y seguir creciendo como persona.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudios</h4>
+                        <span class="casa">"Instituto Linares"</span>
+                        <span class="fecha">2003 - 2017</span>
+                        <p>El Colegio Marianista Instituto Linares fue mi hogar educativo durante catorce años, desde 2003 hasta 2017. Allí aprendí valores como el compañerismo y la solidaridad, mientras recibía una educación de calidad gracias a sus excelentes profesores y un ambiente de aprendizaje enriquecedor. Esta experiencia ha sido fundamental en mi formación como persona y en mi carrera universitaria en Ingeniería Civil en Informática en la Universidad Católica del Maule.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Programación</h4>
+                        <span class="casa">"Universidad Católica del Maule"</span>
+                        <span class="fecha">2022</span>
+                        <p>En el segundo semestre del 2022, participé en el Laboratorio de Computación de la Escuela de Ingeniería Civil Informática en la Universidad Católica del Maule. Aprendí programación y mejoré mis habilidades de trabajo en equipo, resolución de problemas y responsabilidad frente a mis compromisos y objetivos. Fue una experiencia valiosa para mi formación académica y profesional en el campo de la informática.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Atención al cliente y Teletrabajo.</h4>
+                        <span class="casa">"Apex America BPO"</span>
+                        <span class="fecha">2022</span>
+                        <p>Durante los meses de enero y febrero del 2022, trabajé como Representante de Atención al Cliente en modalidad teletrabajo en Apex America BPO (WOM). En esta posición, tuve la oportunidad de interactuar con los clientes y brindarles soluciones efectivas a sus inquietudes y problemas. A través de esta experiencia, pude mejorar mis habilidades de comunicación, resolución de problemas y atención al cliente, lo cual me ha ayudado a desarrollarme profesionalmente y a estar preparado para futuras oportunidades laborales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Geomensura y Drones.</h4>
+                        <span class="casa">"Empresa Jorge Moller"</span>
+                        <span class="fecha">2021</span>
+                        <p>Durante los últimos meses del año 2021, tuve la oportunidad de trabajar en la empresa Jorge Moller, especializada en geomensura. En esta experiencia, fui responsable de la configuración de drones para su implementación en terreno, así como de la actualización de hardware y software (Agisoft Metashape) necesarios para el correcto funcionamiento de los mismos. Esta oportunidad me permitió desarrollar habilidades en el área de tecnología y trabajar en un ambiente laboral muy enriquecedor y desafiante.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCION DE PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <p>Aunque ya cuento con mi página web personal, aún no tengo reunidos todos los trabajos que deseo subir a mi portafolio. Estoy en proceso de recopilar y organizar los proyectos que he realizado a lo largo de los años, para poder presentarlos de manera efectiva. En cuanto tenga la selección final, la editaré y publicaré en mi página web. Estoy emocionado por mostrar mi trabajo y estoy trabajando duro para asegurarme de que sea de alta calidad.</p>
+            <!--<div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt=""> 
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Linares, Maule
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: +569 6244 5426
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cristobal.cortes@alu.ucm.cl
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a> 
+        <div class="redes">
+            <a href="https://web.facebook.com/cristo.cortescofre/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/crist%C3%B3bal-andr%C3%A9s-c-287461131/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/cristoacc/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="miscript.js"></script>
+</body>
+</html>
